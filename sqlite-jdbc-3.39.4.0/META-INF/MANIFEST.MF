@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-Description: SQLite JDBC library
+Automatic-Module-Name: org.xerial.sqlitejdbc
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.xerial.sqlite-jdbc;singleton:=true
+Bnd-LastModified: 1667816768757
+Bundle-ManifestVersion: 2
+Import-Package: javax.sql;resolution:=optional,org.sqlite;resolution:=
+ optional,org.sqlite.core;resolution:=optional,org.sqlite.date;resolut
+ ion:=optional,org.sqlite.jdbc3;resolution:=optional,org.sqlite.jdbc4;
+ resolution:=optional,org.sqlite.util;resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-6.3.1.202206071316
+Export-Package: org.sqlite;uses:="javax.sql,org.sqlite.core,org.sqlite
+ .date";version="3.39.4",org.sqlite.jdbc3;uses:="org.sqlite,org.sqlite
+ .core";version="3.39.4",org.sqlite.javax;uses:="javax.sql,org.sqlite,
+ org.sqlite.jdbc4";version="3.39.4",org.sqlite.core;uses:="org.sqlite,
+ org.sqlite.jdbc4";version="3.39.4",org.sqlite.jdbc4;uses:="javax.sql,
+ org.sqlite,org.sqlite.core,org.sqlite.jdbc3";version="3.39.4",org.sql
+ ite.date;version="3.39.4",org.sqlite.util;version="3.39.4"
+Bundle-Name: SQLite JDBC
+Bundle-Version: 3.39.4.0
+Build-Jdk-Spec: 1.8
+Created-By: Apache Maven Bundle Plugin 5.1.8
+
